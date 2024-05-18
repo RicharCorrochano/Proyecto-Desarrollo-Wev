@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro-Fit</title>
+    <meta name="description" content="Sitio web dedicado a la venta de planes de entrenamientos personalizados, en donde esta pagina de presentacion, 
+    muestra la utilidad de la plataforma, la facilidad para poder realizar los entrenamientos y el seguimiento de los profesionales a cargo de desarrollar,
+    los entrenamientos para cada cliente.">
+    <title> Pro-Fit Entrenamientos </title>
     <link rel="shortcut icon" href="./img/Logo corriendo.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body> 
@@ -21,28 +26,79 @@
               <a class="nav-link" href="./Contacto.html">CONTACTO</a>
             </li>
           </ul>
-    </nav>
-        <header>
-        <img class="portada"src="./img/Imagen 1.jpeg" alt="">
+    </nav>   
+    <header>
+        <div class="contenedor-portada">
+            <img class="img-portada" src="./img/Imagen 1.jpeg" alt="Imagen de la marca de la plataforma de entrenamientos personalizados">
+        </div> 
     </header>
-    <main class="cuerpo-pagina">
-        <h2 class="Titulo-Main">QUIENES SOMOS</h2>
-        <p class="parrafo-inicio">Profesionales de la Actividad Fisica, encargados de guiarte y ayudarte
-        en tus entrenamientos para conseguir los objetivos deseados, a traves de los
-        distintos planes personalizados que te ofrecemos dentro de la plataforma ProFit.
-    </p>
+    <main class="main-index">
+        <div class="cuerpo-pagina" data-aos="zoom-in" data-aos-offset="400" data-aos-easing="ease-in-sine">
+            <h2 class="Titulo-Main">¿QUIENES SOMOS?</h2>
+            <p class="parrafo-inicio">Profesionales de la Actividad Fisica, encargados de guiarte y ayudarte
+            en tus entrenamientos para conseguir los objetivos deseados.
+            </p>
+        </div>
+
+        <div class="cuerpo-pagina" data-aos="zoom-in" data-aos-offset="400" data-aos-easing="ease-in-sine">
+            <h2 class="Titulo-Main">NUESTRO ENFOQUE</h2>
+            <p class="parrafo-inicio"> Un metodo innovador donde podes realizar tus entrenamientos en cualquier momento del día,
+                mediante el uso de cualquier dispositivo movil, interactuando con la plataforma ProFit.
+            </p>
+        </div>
+
+        <div class="cuerpo-pagina" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h2 class="Titulo-Main">BENEFICIOS</h2>
+            <p class="parrafo-inicio"> Atencion continua por parte de nuestros coachs, con la asistencia y ayuda necesaria
+                para que tus entrenamientos sean seguros y unicos.
+            </p>
+        </div>
+
+        <div id="carouselExampleAutoplaying" class="carosuel-img carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/carrousel/img1-fotor.jpg" class="d-block w-100" alt="Entrenamiento de abdominales con peso realizado por una mujer">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carrousel/img2-fotor.jpg" class="d-block w-100" alt="Elementos de entrenamiento, denominadas pesas rusas o ketbell">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carrousel/img3-fotor.jpg" class="d-block w-100" alt="Entrenamiento desde casa representado por un hombre a traves de la plataforma ProFit y uso de dispositivo tecnologicos">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carrousel/img4-fotor.jpg" class="d-block w-100" alt="Entrenamiento de fuerza de piernas con un accesorio, cajon para saltar">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carrousel/img5-fotor.jpg" class="d-block w-100" alt="Entrenamiento dirigido por una coach mujer, al aire libre (parque o casa) representando la flexibilidad de los planes de la plataforma">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
     <footer class="footer">
-        <img class="Logo-footer" src="./img/Logo corriendo.jpg" alt="">
+        <img class="Logo-footer" src="./img/Logo corriendo.jpg" alt="Logo pequeño representando a un corredor">
         <h5 class="Texto-footer">Copyright // Derechos reservados - ProFit: Entrenamientos Personalizados</h5>
         <div>
             <ul class="redes">
-                <li><img src="./img/Instagram.png" alt=""></li>
-                <li><img src="./img/facebook.png" alt=""></li>
-                <li><img src="./img/whatsapp.png" alt=""></li>
+                <li><img class="redes-img" src="./img/Instagram.png" alt="Acceso para la red social instagram de la plataforma ProFit, para contactarte con nosotros"></li>
+                <li><img class="redes-img" src="./img/facebook.png" alt="Acceso para la red social facebook de la plataforma ProFit, para contactarte con nosotros"></li>
+                <li><img class="redes-img" src="./img/whatsapp.png" alt="Acceso para la red social whatsapp de la plataforma ProFit, para contactarte con nosotros"></li>
             </ul>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          once:true
+        });
+    </script>
+  </body>
 </html>

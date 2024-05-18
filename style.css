@@ -6,32 +6,6 @@
     box-sizing: border-box;
 }
 
-.Logo-footer{
-    width: 50px;
-    height: 50px;
-}
-.footer{
-    background-color: black;
-    text-align: center;
-}
-
-.Texto-footer{
-    color: blanchedalmond;
-    font-size: 15px;
-    text-align: center;
-    margin: 2px 0px 2px 0px;
-}
-
-.redes{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px;
-    margin: 0px;
-    list-style: none;
-}
-
-
 .navegador-pagina{
     background-color: black;
     width: 100%;
@@ -39,7 +13,7 @@
     top: 0px;
     display: flex;
     justify-content: end;
-    padding: 20px;
+    padding: 15px;
     top: 0px;
 }
 
@@ -54,7 +28,9 @@
     color: white;
     text-decoration: none;
     list-style: none;
+    font-size: 20px;
 }
+
 .Titulo-Pagina{
     font-family:"Lexend Tera";
     font-style: normal;
@@ -62,9 +38,13 @@
     font-weight: bolder;
     font-size: 50px;
 }
-.portada{
+.contenedor-portada{
+    height: 500px;
+    background-color: black;
+}
+.img-portada{
     width: 100%;
-    height: 600px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -85,24 +65,45 @@
     font-size: 25px;
 }
 
-.cuerpo-pagina{
+.main-index{
+    height: 630px;
     background-color: grey;
-    padding: 40px;
-    gap: 20px;
     display: flex;
     flex-direction: column;
-
+    position: relative;
 }
+
+.cuerpo-pagina{
+    width: 450px;
+    height: 170px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 20px 20px 60px;
+    border: 3px solid;
+    border-color: rgb(36, 67, 29);
+}
+
+.carosuel-img{
+    width: 60%;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    margin: 30px;
+    object-fit: cover;
+}
+
 .Titulo-Main{
     font-family: "Arial";
-    font-size:xx-large;
-    text-decoration: underline;
+    font-size: 22px;
+    text-align: center;
 }
 .parrafo-inicio{
     font-family:"Arial";
-    font-weight: normal;
-    text-align: justify;
-    font-weight: normal;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    
 }
 
 .contacto-header{
@@ -233,6 +234,8 @@
     justify-content: space-evenly;
     gap: 20px;
     padding: 10px;
+    background-color: rgb(129, 125, 125);
+    margin: 0px;
 }
 
 .tarjeta1{
@@ -268,7 +271,7 @@
     padding: 20px;
     border-radius: 20px;
     padding: 10px;
-    position: relative;  
+    position: relative;
 }
 
 .lista{
@@ -317,7 +320,6 @@
 .main2{
     background-color: rgb(129, 125, 125);
     margin: 0px;
-
 }
     
 .descripcion-planes{
@@ -330,7 +332,7 @@
 }
 
 .descripcion-planes1{
-    margin: 20px 0px;
+    margin: 0px 0px;
     text-align: center;
     font-size: 30px;
     color: black
@@ -344,7 +346,90 @@
     margin: 10px 0px 10px 0px;
 }
 
+.Logo-footer{
+    width: 50px;
+    height: 50px;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+}
+
+.Texto-footer{
+    color: blanchedalmond;
+    font-size: 15px;
+    text-align: center;
+    margin: 2px 0px 2px 0px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    margin: 0px;
+    list-style: none;
+}
+
+
+@media(max-width: 1420px){
+    .main-index{
+        height: 500px;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .cuerpo-pagina{
+        width: 300px;
+        height: 130px;
+        margin: 20px 15px 15px 100px;
+    }
+    
+    .carosuel-img{
+        width: 55%;
+        padding: 20px;
+        right: 60px;
+        margin: 10px;
+    }
+    
+    .Titulo-Main{
+        font-size: 16px;
+    }
+    .parrafo-inicio{
+        font-size: 12px;
+        margin: 5px;
+    }
+}
+
+@media(max-width: 1200px){
+    .cuerpo-pagina{
+        width: 270px;
+        height: 135px;
+        margin: 15px 15px 15px 80px;
+    }
+    .carosuel-img{
+        width: 60%;
+        padding: 20px;
+        right: 30px;
+        margin: 20px;
+    }
+    .Titulo-Main{
+        font-size: 14px;
+    }
+    .parrafo-inicio{
+        font-size: 12px;
+        margin: 5px;
+    }
+    
+}
+
 @media(max-width: 1024px){
+
+    .nav-link{
+        font-size: 18px;
+    }
     .encabezado-titulo{
         font-size: 48px;
     }
@@ -359,9 +444,38 @@
     .titulo-planes{
         font-size: 48px;
     }
+    .main-index{
+        height: 500px;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .cuerpo-pagina{
+        width: 250px;
+        height: 140px;
+        margin: 10px 10px 10px 60px;
+        padding: 10px;
+    }
+    
+    .carosuel-img{
+        width: 55%;
+        padding: 20px;
+        margin: 40px;
+    }
+    
+    .Titulo-Main{
+        font-size: 14px;
+    }
+    .parrafo-inicio{
+        font-size: 12px;
+        margin: 5px;
+    }
+    
 }
 
 @media(max-width: 992px){
+
     .encabezado-titulo{
         font-size: 48px;
     }
@@ -396,9 +510,50 @@
         height: 160px;
         margin: 10px;
     }
-}
 
+    .main-index{
+        height: 430px;
+        }
+
+    .cuerpo-pagina{
+        width: 200px;
+        height: 120px;
+        margin: 10px 10px 10px 60px;
+        padding: 10px;
+    }
+    
+    .carosuel-img{
+        width: 55%;
+        padding: 20px;
+        margin: 40px;
+    }
+    
+    .Titulo-Main{
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    .parrafo-inicio{
+        font-size: 10px;
+        margin: 5px;
+    }
+
+    .contenedor-portada{
+        height: 400px;
+    }
+    .img-portada{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    }
+    
+    
 @media(max-width: 768px){
+    
+    .nav-link{
+        font-size: 16px;
+    }
     .encabezado-titulo{
         font-size: 40px;
     }
@@ -447,9 +602,77 @@
         height: 120px;
         margin: 0px 0px 20px 15px;
     }
+
+    .main-index{
+        height: 700px;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .cuerpo-pagina{
+        width: 200px;
+        height: 120px;
+        padding: 15px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .carosuel-img{
+        width: 55%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .Titulo-Main{
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    .parrafo-inicio{
+        font-size: 9px;
+        margin: 5px;
+    }
+
+    .contenedor-portada{
+        height: 300px;
+    }
+
+    .img-portada{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .Logo-footer{
+        width: 42px;
+        height: 42px;
+    }
+    
+    .Texto-footer{
+        font-size: 12px;
+        text-align: center;
+    }
+    .redes{
+        padding: 5px;
+    }
+    .redes-img{
+        width: 30px;
+        height: 30px;
+    }
     }
 
 @media(max-width: 480px){
+    
+    .nav-link{
+        font-size: 14px;
+    }
     .encabezado-titulo{
         font-size: 28px;
     }
@@ -462,10 +685,10 @@
         object-fit: cover;
     }
     .titulo-planes{
-        font-size: 28px;
+        font-size: 26px;
     }
     .descripcion-planes{
-        font-size: 28px;
+        font-size: 26px;
     }
     .imagen-contacto{
         width: 100%;
@@ -473,7 +696,7 @@
         object-fit: cover;
     }
     .form{
-        width: 300px;
+        width: 315px;
     }
     .main-contacto-titulo{
         font-size: 25px;
@@ -500,43 +723,133 @@
         justify-content: center;
         padding: 15px;
     }
+    
+    .main-index{
+        height: 600px;
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cuerpo-pagina{
+        width: 150px;
+        height: 120px;
+        margin: auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .carosuel-img{
+        width: 60%;
+        margin: auto;
+        padding: 10px;
+        justify-content: center;
+    }
+    
+    .Titulo-Main{
+        font-size: 11px;
+        margin: 0px;
+    }
+
+    .parrafo-inicio{
+        font-size: 8px;
+        margin: 5px;
+    }
+
+    .contenedor-portada{
+        height: 200px;
+    }
+
+    .img-portada{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .Logo-footer{
+        width: 38px;
+        height: 38px;
+    }
+    
+    .Texto-footer{
+        font-size: 10px;
+        text-align: center;
+    }
+    .redes{
+        padding: 5px;
+    }
+    .redes-img{
+        width: 28px;
+        height: 28px;
+    }
+
 }
 
 @media(max-width: 330px){
+    
+    .nav-link{
+        font-size: 12px;
+    }
     .encabezado-titulo{
-        font-size: 12PX;
+        font-size: 22px;
     }
     .encabezado-texto{
-        font-size: 10px;
-}
+        font-size: 14px;
+    }
     .portada{
         width: 100%;
         height: 100px;
         object-fit: cover;
-}
-.tarjetas{
+    }
+    .tarjetas{
         font-size: 15px;
         flex-direction: column;
-}
-.titulo-planes{
-    font-size: 12px;
-}
-.descripcion-planes{
-    font-size: 12px;
-}
-.imagen-contacto{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-.form{
-    width: 300px;
-}
-.main-contacto-titulo{
-    font-size: 20px;
-    padding: 5px;
-}
-.titulo-contacto{
-    font-size: 18px;
-}
+    }
+    .titulo-planes{
+        font-size: 22px;
+    }
+    .descripcion-planes{
+        font-size: 22px;
+    }
+    .descripcion-planes1{
+        font-size: 20px;
+    }
+    .imagen-contacto{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .form{
+        width: 300px;
+    }
+    .main-contacto-titulo{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .titulo-contacto{
+        font-size: 18px;
+    }
+
+    .contenedor-portada{
+        height: 180px;
+    }
+
+    .img-portada{
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .Texto-footer{
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .redes{
+        padding: 5px;
+    }
+    .redes-img{
+        width: 25px;
+        height: 25px;
+    }
 }

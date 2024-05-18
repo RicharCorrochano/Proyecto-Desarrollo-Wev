@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro-Fit</title>
+    <meta name="description" content="Esta segunda vista del sitio web, muestra los 3 tipos de planes personalizados que ofrece la presente plataforma,
+    los cuales muestran la descripción de estimulos de entrenamiento, el tiempo de los mismos, los aspectos fundamentales a desarrollar en cada uno,
+    en relacion a las distintas necesidades del cliente y orientados a los objetivos especificos que ellos busquen cumplir.">
+    <title> Planes Personalizados Pro-Fit</title>
     <link rel="shortcut icon" href="./img/Logo corriendo.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav class="navegador-pagina">
+    <header>
+      <nav class="navegador-pagina">
         <ul class="nav nav-underline">
             <li class="nav-item">
               <a class="nav-link" href="./index.html">INICIO</a>
@@ -21,21 +27,24 @@
               <a class="nav-link" href="./Contacto.html">CONTACTO</a>
             </li>
           </ul>
-    </nav>
-    <header class="encabezado">
-        <H1 class="encabezado-titulo">TU MEJOR FORMA ESTA EN CAMINO</H1>
-        <h3 class="encabezado-texto">Preparate para experimentar los cambios en tu condicion fisica y estetica,</h3>
-        <h3 class="encabezado-texto">para mejorar durante el desarrollo de los entrenamientos,</h3>
-        <h3 class="encabezado-texto">diseñados especialmente para ti y asi conseguir Tu Mejor Forma!</h3>
-    </header>
-    <main class="main2">
-            <h2 class="descripcion-planes">Elige tu Plan de Entrenamiento</h2>
-            <h2 class="descripcion-planes">100% Online o Presencial</h2>
-            <h4 class="titulo-planes">PLANES DE ENTRENAMIENTO</h4>
-            <h5 class="descripcion-planes1">Selecciona y disfruta la mejor opcion para entrenar</h5>
+      </nav>
+    <header>
+    <main >
+            <div class="encabezado">
+                <H1 class="encabezado-titulo">TU MEJOR FORMA ESTA EN CAMINO</H1>
+                <h3 class="encabezado-texto">Preparate para experimentar los cambios en tu condicion fisica y estetica,</h3>
+                <h3 class="encabezado-texto">para mejorar durante el desarrollo de los entrenamientos,</h3>
+                <h3 class="encabezado-texto">diseñados especialmente para ti y asi conseguir Tu Mejor Forma!</h3>
+            </div>
+            <div class="main2">
+                <h2 class="descripcion-planes">Elige tu Plan de Entrenamiento</h2>
+                <h2 class="descripcion-planes">100% Online o Presencial</h2>
+                <h4 class="titulo-planes">PLANES DE ENTRENAMIENTO</h4>
+                <h5 class="descripcion-planes1">Selecciona y disfruta la mejor opcion para entrenar</h5>
+            </div>
          <section class="tarjetas">
-                <div class="tarjeta1">
-                    <img class="img-plan"src="./img/Plan Principiante.jpg"alt="">
+                <div class="tarjeta1" data-aos="fade-up" data-aos-duration="2000">
+                    <img class="img-plan"src="./img/Plan Principiante.jpg"alt="Mujer realizando entrenamiento de abdominales">
                     <h3 class="titulo-plan">Plan Principiante</h3>
                     <p class="parrafo-plan">Descripcion del plan</p>
                     <ul class="lista">
@@ -49,8 +58,8 @@
                     </ul>
                     <button class="boton-planes">Comprar Plan</button>
                 </div>
-                <div class="tarjeta2">
-                    <img class="img-plan"src="./img/Plan Intermedio.jpg"alt="">
+                <div class="tarjeta2" data-aos="fade-up" data-aos-duration="2000">
+                    <img class="img-plan"src="./img/Plan Intermedio.jpg"alt="Hombre realizando un ejercicio de sobrecarga con mancuerna, para mejorar la fuerza de los musculos de la espalda">
                     <h3 class="titulo-plan">Plan Intermedio</h3>
                     <p class="parrafo-plan">Descripcion del plan</p>
                     <ul class="lista">
@@ -63,8 +72,8 @@
                         <li>Videos explicativos (clases online)</li>
                     <button class="boton-planes">Comprar Plan</button>
                 </div>
-                <div class="tarjeta3">
-                    <img class="img-plan"src="./img/Plan Avanzado.jpg"alt="">
+                <div class="tarjeta3" data-aos="fade-up" data-aos-duration="2000">
+                    <img class="img-plan"src="./img/Plan Avanzado.jpg"alt="Entrenamiento pliometrico con saltos al cajon, representado por una mujer para mejorar la fuerza explosiva de las piernas">
                     <h3 class="titulo-plan">Plan Avanzado</h3>
                     <p class="parrafo-plan">Descripcion del plan</p>
                     <ul class="lista">
@@ -80,16 +89,22 @@
         </section>  
     </main>
     <footer class="footer">
-        <img class="Logo-footer" src="./img/Logo corriendo.jpg" alt="">
+        <img class="Logo-footer" src="./img/Logo corriendo.jpg" alt="Logo pequeño representando a un corredor">
         <h5 class="Texto-footer">Copyright // Derechos reservados - ProFit: Entrenamientos Personalizados</h5>
         <div>
             <ul class="redes">
-                <li class="img-footer"><img src="./img/Instagram.png" alt=""></li>
-                <li class="img-footer"><img src="./img/facebook.png" alt=""></li>
-                <li class="img-footer"><img src="./img/whatsapp.png" alt=""></li>
+                <li><img class="redes-img" src="./img/Instagram.png" alt="Acceso para la red social instagram de la plataforma ProFit, para contactarte con nosotros"></li>
+                <li><img class="redes-img" src="./img/facebook.png" alt="Acceso para la red social facebook de la plataforma ProFit, para contactarte con nosotros"></li>
+                <li><img class="redes-img" src="./img/whatsapp.png" alt="Acceso para la red social whatsapp de la plataforma ProFit, para contactarte con nosotros"></li>
             </ul>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          once:true
+        });
+    </script>
 </body>
 </html>
